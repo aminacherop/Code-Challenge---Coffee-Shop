@@ -31,25 +31,4 @@ class Coffee:
 
         total_price = sum(order.price for order in self._orders)
         return total_price/len(self._orders)
-
-
-
-
-espresso = Coffee("Espresso")
-latte = Coffee("Latte")
-cappuccino = Coffee("Cappuccino",)
-print(f"Created coffees: {espresso.name}, {latte.name}, {cappuccino.name}")
-
-
-
-print("\nAverage prices:")
-print(f"Espresso: ${espresso.average_price():.2f}")  
-print(f"Latte: ${latte.average_price():.2f}")  
-print(f"Cappuccino: ${cappuccino.average_price():.2f}")  
-
-
-mocha = Coffee("Mocha")
-print(f"\nMocha (no orders):")
-print(f"Number of orders: {mocha.num_orders()}")
-print(f"Average price: ${mocha.average_price():.2f}")
-print(f"Customers: {mocha.customers()}")
+    
